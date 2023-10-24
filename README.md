@@ -2,7 +2,29 @@
 
 ![](static/code-example.png)
 
-The provided code showcases a Flask API integrated with Temporal. Here's how you would interact with this API using `curl` commands:
+
+## Start the app
+
+To start the app, run the following command:
+
+```bash
+# terminal 1
+poetry run python run_worker.py
+# terminal 2
+poetry run python app.py
+```
+
+Now you can interact with the app using the provided API.
+Choose one of the following options:
+
+### Use the web app
+
+You can visit the web app at http://127.0.0.1:5000 and interact with the app.
+
+### Use the API
+
+The provided code showcases a Flask API integrated with Temporal.
+Here's how you would interact with this API using `curl` commands:
 
 1. **Add a Task**:
 
