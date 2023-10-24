@@ -82,6 +82,8 @@ Choose one of the following options:
 
 You can visit the web app at http://127.0.0.1:5000 and interact with the app.
 
+![](static/to-do-web.png)
+
 ### Use the API
 
 The provided code showcases a Flask API integrated with Temporal.
