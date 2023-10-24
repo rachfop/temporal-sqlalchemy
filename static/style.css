@@ -1,0 +1,51 @@
+/* Styles for the tasks list */
+#tasksList {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tasksList tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+#tasksList tr:hover {
+    background-color: #f5f5f5;
+}
+
+#tasksList td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* Style for completed tasks */
+.completed-task {
+    background-color: #e0f2f1;
+}
+
+/* General button styles */
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Styles for the Complete button for completed tasks */
+.completed-btn {
+    background-color: #bbb;
+    color: #fff;
+}
+
+/* Styles for the Complete button for incomplete tasks */
+button:not(.completed-btn) {
+    background-color: #4caf50;
+    color: #fff;
+}
+

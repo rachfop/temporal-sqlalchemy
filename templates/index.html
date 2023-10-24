@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- Adding Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adding Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="mb-4">Todo App</h1>
+
+    <!-- Add Task Section -->
+    <div class="mb-4">
+        <h2>Add Task</h2>
+        <div class="input-group mb-3">
+            <input type="text" id="taskInput" class="form-control" placeholder="Enter task">
+            <div class="input-group-append">
+                <button onclick="addTask()" class="btn btn-primary">Add Task</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- View All Tasks Section -->
+    <div class="mb-4">
+        <h2>All Tasks</h2>
+        <button onclick="getAllTasks()" class="btn btn-info mb-2">Refresh</button>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tasksList">
+                <!-- Dynamic rows will be added here using JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+<!-- Get Task by ID Section -->
+<div class="mb-4">
+    <h2>Get Task By ID</h2>
+    <div class="input-group mb-3">
+        <input type="number" id="taskIdInput" class="form-control" placeholder="Enter task ID">
+        <div class="input-group-append">
+            <button onclick="getTaskById()" class="btn btn-secondary">Get Task</button>
+        </div>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="singleTaskOutput">
+            <!-- The task details will be added here using JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+</div>
+
+<!-- Include JavaScript Logic -->
+<script src="/static/app.js"></script>
+</body>
+</html>
